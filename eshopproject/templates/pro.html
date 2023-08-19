@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pro</title>
+</head>
+<body>
+{% for c in cat %}
+
+<a href="{% url 'product_by_cat' %}?category={{c.name}}">{{c.name}}<br></a>
+
+
+{% endfor %}
+{% for p in products %}
+<img src="{{p.img.url}}">
+{{p.name}}<br>
+{% endfor %}
+
+
+</body>
+</html>

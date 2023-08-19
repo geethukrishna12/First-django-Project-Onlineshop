@@ -1,0 +1,39 @@
+{% load static %}
+<html>
+<head>
+<!--      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script type="text/javascript">
+$(document).ready(function(){
+  $(".close").click(function(){
+    $("#myAlert").alert('close');
+  });
+});
+
+    </script>
+</head>
+<body>
+{% for message in messages %}
+<div  class="container-fluid p-0">
+    <div id="myAlert" class="alert alert-{{ message.tags }}">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span onclick="" aria-hidden="true">×</span>
+        </button>
+        {{ message }}
+    </div>
+</div>
+{% endfor %}
+
+
+</body>
+
+</html>
+
+
