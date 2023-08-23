@@ -1,6 +1,6 @@
 #  Online Shop Project
 
-This is a student project for creating an online shop using Python and Django.
+This is a student project for creating an online shop using django HTML, CSS.JAvaScript .
 
 ## Project Description
 
