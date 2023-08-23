@@ -14,4 +14,5 @@ The goal of this project is to build a simple online shop application using the 
 - 
 
 1. Clone the repository:
+2. https://github.com/geethukrishna12/First-django-Project-Onlineshop.git
  
